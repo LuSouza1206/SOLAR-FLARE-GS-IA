@@ -1,11 +1,11 @@
-# 🌞 Previsão de Flares Solares com Machine Learning
+#  Previsão de Flares Solares com Machine Learning
 ### Global Solution — IA e Machine Learning | FIAP 2025
 
 > **Pergunta central:** Qual é o perfil das regiões solares de alto risco — e como calibrar um sistema de alerta que minimize o custo real de proteger satélites e infraestrutura?
 
 ---
 
-## 👥 Integrantes
+##  Integrantes
 
 | Nome | RM |
 |---|---|
@@ -16,20 +16,20 @@
 
 ---
 
-## 📁 Estrutura do Repositório
+##  Estrutura do Repositório
 
 ```
 solar-flare-gs/
-├── solar_flare_FINAL.ipynb       # Notebook principal com toda a análise
-├── solar_flare.csv               # Dataset (UCI Solar Flare, 1.066 observações)
-├── relatorio_solar_flare.pdf     # Relatório completo em PDF
-├── apresentacao_solar.pptx       # Slides da apresentação
+├── SOLAR-FLARE.ipynb       # Notebook principal com toda a análise
+├── TABELA CSV.csv               # Dataset (UCI Solar Flare, 1.066 observações)
+├── RELATORIO SOLAR FLARE.pdf     # Relatório completo em PDF
+├── APRESENTACAO SOLAR FLARE.pptx       # Slides da apresentação
 └── README.md
 ```
 
 ---
 
-## 📊 Sobre o Dataset
+##  Sobre o Dataset
 
 **UCI Solar Flare Dataset** — coletado pelo NOAA e disponibilizado no UCI Machine Learning Repository.
 
@@ -38,7 +38,7 @@ solar-flare-gs/
 - **10 features** físicas observadas (morfologia, área, evolução, etc.)
 - **3 targets** originais: número de flares C, M e X nas próximas 24h
 
-O arquivo `solar_flare.csv` já está pronto para uso. Para baixar o dataset original diretamente da UCI:
+O arquivo `TABELA CSV.csv` já está pronto para uso. Para baixar o dataset original diretamente da UCI:
 
 ```python
 from ucimlrepo import fetch_ucirepo
@@ -47,7 +47,7 @@ dataset = fetch_ucirepo(id=89)
 
 ---
 
-## 🚀 Como Rodar
+##  Como Rodar
 
 ### 1. Clone o repositório
 
@@ -65,14 +65,14 @@ pip install pandas numpy matplotlib seaborn scikit-learn imbalanced-learn scipy
 ### 3. Abra o notebook
 
 ```bash
-jupyter notebook solar_flare_FINAL.ipynb
+jupyter notebook SOLAR-FLARE.ipynb
 ```
 
-Ou abra diretamente no **Google Colab** — basta fazer upload do `.ipynb` e do `solar_flare.csv`.
+Ou abra diretamente no **Google Colab** — basta fazer upload do `.ipynb` e do `TABELA CSV.csv`.
 
 ---
 
-## 🔍 O que foi feito
+##  O que foi feito
 
 ### Análise Exploratória
 - Mapas de calor de risco: Zurich × Área e Zurich × Evolução
@@ -101,7 +101,7 @@ O threshold ótimo para aplicações críticas é **0.28** (não 0.5), calibrado
 
 ---
 
-## 📋 Perfil de Risco
+##  Perfil de Risco
 
 | Zona | Condições | Probabilidade |
 |---|---|---|
@@ -112,7 +112,7 @@ O threshold ótimo para aplicações críticas é **0.28** (não 0.5), calibrado
 
 ---
 
-## 📚 Referências
+##  Referências
 
 - Bradshaw, G. (1989). UCI Solar Flare Dataset. UCI ML Repository.
 - Florios, K. et al. (2018). Forecasting Solar Flares Using a Random Forest Classifier. *Solar Physics*, 293(2).
